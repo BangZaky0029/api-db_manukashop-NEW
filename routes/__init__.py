@@ -9,7 +9,7 @@ from project_api.routes.UPDATE_table_urgent import update_urgent_bp
 from project_api.routes.POST_table_urgent import post_urgent_bp
 
 
-from project_api.routes.Ai_ChatBot.services.whatAppChat import whatsapp_bp, init_scheduler
+# from project_api.routes.Ai_ChatBot.services.whatAppChat import whatsapp_bp, init_scheduler
 
 
 api_bp = Blueprint('api', __name__)
@@ -25,6 +25,6 @@ api_bp.register_blueprint(update_urgent_bp)
 api_bp.register_blueprint(post_urgent_bp)
 
 
-api_bp.register_blueprint(whatsapp_bp)
-init_scheduler()
+# api_bp.register_blueprint(whatsapp_bp)
+# init_scheduler()
 

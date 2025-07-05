@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__, static_url_path='', 
-            static_folder=os.path.abspath(r'c:\KODINGAN\db_manukashop\WEB-SERVER'))
+            static_folder=os.path.abspath(r'D:\db_manukashop\WEB-SERVER'))
 
 CORS(app, resources={
     r"/*": {
